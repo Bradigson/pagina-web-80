@@ -1,0 +1,178 @@
+/*=================body=================*/
+body{
+    background:url(../imgs/8.svg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+
+
+
+/*=====================section one=====================*/
+.sesion1{
+
+    position:relative;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.sesion1__content{
+    background:rgba(0,0,0,.3);
+    width:40%;
+    padding:20px;
+    border-radius:10px;
+    position:absolute;
+    top:50px;
+}
+.getin{
+    display:flex;
+    margin-bottom:30px;
+}
+
+#inputEnter{
+    margin-right:20px;
+}
+/*=======================all the result===================*/
+#result1, #result2,#result3,#result4,#result5,#result6,#result7,#result8,
+#result9,#result10,#result11,#result12{
+    height:35px;
+    padding:3px 0 0 0 ;
+    font-weight: 500;
+    font-size:20px;
+}
+
+
+/*=================boton==============*/
+#boton{
+    font-size:13px;
+}
+
+
+
+/*==================alert============*/
+.alert{
+    background:rgba(0,0,0,.3);
+    backdrop-filter:blur(10px);
+    position:fixed;
+    width:100%;
+    height:102%;
+    z-index:100;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    display:none;
+    
+}
+
+.message{
+
+    background:#eee;
+    width:700px;
+    height:200px;
+    padding:20px;
+    border-radius:10px;
+    display:flex;
+    padding-top:80px;
+    justify-content: center;
+    border-top:5px solid #ec2b2b;
+}
+#boton-alert{
+    position:absolute;
+    margin-top:-60px;
+    margin-left:625px;
+}
+@keyframes show{
+    0%{
+        opacity:0;
+
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+
+/*===================imgs===================*/
+#img1,#img2,#img3,#img4,#img5,#img6{
+    position:absolute;
+    width:100px;
+    right:0px;
+    filter:drop-shadow(1px 5px 5px rgba(0,0,0,.7));
+}
+#img2{
+    left:50px;
+    width:200px;
+    animation:apear 800ms linear 1;
+}
+#img3{
+    width:150px;
+    left:40px;
+    top:20px;
+    animation:apear 800ms linear 1;
+
+
+}
+#img4{
+    top:40px;
+    right:200px;
+    animation:apear1 800ms linear 1;
+}
+#img5{
+    bottom:30px;
+    right:250px;
+    width:200px;
+    animation:apear2 800ms linear 1;
+}
+#img6{
+   width:160px;
+   right:40px;
+   animation:apear1 800ms linear 1;
+
+}
+
+
+
+/*=================animation================*/
+@keyframes apear{
+    0%{
+        opacity:0;
+        transform:translateY(-60px);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes apear1{
+    0%{
+        opacity:0;
+        transform:translateX(60px);
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0);
+    }
+}   
+@keyframes apear2{
+    0%{
+        opacity:0;
+        transform:translateY(60px);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0);
+    }
+}   
+
+
+
+/*====================particles=================*/
+#particles-js{
+    position:absolute;
+    width:100%;
+    height:100vh;
+}
