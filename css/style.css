@@ -380,3 +380,19 @@ body{
   
 
 }
+
+
+
+
+@media screen and (max-width:375px){
+
+    .card{
+        height:80%;
+    }
+    #inputEnter::placeholder{
+        font-size:10px;
+    }
+    #boton{
+        font-size:10px;
+    }
+}
