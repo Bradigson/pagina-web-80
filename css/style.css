@@ -385,14 +385,21 @@ body{
 
 
 @media screen and (max-width:375px){
+    #boton-alert{
+        margin-left:220px;
+    }
 
     .card{
         height:80%;
+        padding-bottom:5px;
     }
     #inputEnter::placeholder{
         font-size:10px;
     }
     #boton{
         font-size:10px;
+    }
+    .sesion1__content{
+        width:85%;
     }
 }
